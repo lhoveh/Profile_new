@@ -1,0 +1,12 @@
+{
+    "snyk.features.codeQuality": false,
+    "snyk.features.codeSecurity": false,
+    "snyk.features.openSourceSecurity": false,
+    "snyk.features.infrastructureAsCode": false,
+    "snyk.severity": {
+        "critical": false,
+        "high": false,
+        "medium": false,
+        "low": false
+    }
+}
