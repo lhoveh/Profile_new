@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+
+    <meta name="description" content="My Curriculum Vitae">
+
+    <link rel="icon" type="image/x-icon" href="icon.png">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+    <title>Curriculum</title>
+
+    <!-- fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Work+Sans:ital,wght@0,600;1,200;1,600&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div class="modalMenu" id="modalMenu">
+        <header class="header">
+
+            <div class="header-center">
+
+                <div class="header-name">
+                    <a href=index.html><span class="topName">André Soares</span></a>
+
+                    <span class="topsubname">
+                        Developer
+                    </span>
+                </div>
+
+                <div class="menu">
+                    <img class="menu_icon" src="images\x.png" id="x_icon">
+                </div>
+
+            </div>
+
+        </header>
+
+        <div class="menu_main">
+            <a href="cv.html">
+                <div class="menu_main_item">
+                    Curriculum
+                </div>
+            </a>
+
+            <a href="projects.html">
+                <div class="menu_main_item">
+                    Projects
+                </div>
+            </a>
+            <a href="contact.html">
+                <div class="menu_main_item">
+                    Contact
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- header -->
+
+    <header class="header">
+
+        <div class="header-center">
+
+            <div class="header-name">
+                <a href=index.html><span class="topName">André Soares</span></a>
+
+                <span class="topsubname">
+                    Developer
+                </span>
+            </div>
+
+            <div class="menu">
+                <img class="menu_icon" src="images\menu_icon.png" id="menu_icon">
+            </div>
+
+            <!-- menu for wide (invisible for mobile first)-->
+            <nav class="header-menu">
+
+                <a class="header-menu-item" href="cv.html">
+                    Curriculum
+                </a>
+
+                <a class="header-menu-item" href="projects.html">
+                    Projects
+                </a>
+
+                <a class="header-menu-item" href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+            <!-- end of menu for wide (invisible for mobile first)-->
+
+        </div>
+
+    </header>
+
+    <script>
+
+        let menuIcon = document.getElementById("menu_icon");
+        menuIcon.addEventListener("click", function () {
+
+            let modalMenu = document.getElementById("modalMenu");
+            modalMenu.classList.add("show_janela");
+            console.log("click")
+
+        })
+
+        let xIcon = document.getElementById("x_icon");
+        xIcon.addEventListener("click", function () {
+
+            let modalMenu = document.getElementById("modalMenu");
+            modalMenu.classList.remove("show_janela");
+            console.log("click")
+
+        })
+
+    </script>
+
+    <section class="Main">
+
+        <h1 class="title_internal">
+            Curriculum
+        </h1>
+
+        <div class="container_cv">
+
+            <div class="container_cv_title">
+
+                <h2 class="topic_internal">
+                    Professional <br> Experience
+                </h2>
+            </div>
+
+            <div class="container_cv_content">
+
+                <div class="cv_main_year" id="year1">
+
+                    <span class="year_cv">
+                        2016 - Current
+                    </span>
+
+                </div><br>
+
+                <div class="cv_main_content" id="content1">
+                    <span class="role_cv">Freelancer</span><br><br>
+
+                    <span class="job_description_cv">
+                        Experience as freelancer. This is a test paragraph. The real content is coming soon.
+                        Or maybe just not that soon yet.
+                    </span>
+                </div>
+
+                <!-- professional experience 2-->
+                <br><Br><br><br>
+
+                <div class="cv_main_year" id="year2">
+                    <span class="year_cv">
+                        2012 - 2016
+                    </span><br>
+                </div>
+
+                <div class="cv_main_content" id="content2">
+                    <span class="role_cv">General Manager</span>
+                    <br><br>
+
+                    <span class="job_description_cv">
+                        Creative direction.
+                        Development of marketing plans and strategies.
+                        Coordination of social media strategies and Search Engine Marketing.
+                    </span>
+                </div>
+
+                <!-- professional experience 3-->
+                <br><Br><br><br>
+
+
+                <div class="cv_main_year" id="year3">
+                    <span class="year_cv">
+                        2010 - 2012
+                    </span><br>
+                </div>
+
+                <div class="cv_main_content" id="content3">
+                    <span class="role_cv">Communications Manager</span>
+                    <br><br>
+
+                    <span class="job_description_cv">
+                        Development of Communication
+                        Strategy, Social Media Monitoring, Netnography, Digital Media Strategy and Campaign Planning.
+                        Working as an associate at Senso, an advertising agency in Rio de Janeiro, Brazil.
+                    </span>
+                </div>
+                <!--  professional experience 4-->
+                <br><Br><br><br>
+
+
+                <div class="cv_main_year" id="year4">
+                    <span class="year_cv">
+                        2007 - 2010
+                    </span><br>
+                </div>
+
+                <div class="cv_main_content" id="content4">
+                    <span class="role_cv">Copywriter</span></span>
+                    <br><br>
+
+                    <span class="job_description_cv">
+                        Copywriter at Tau Virtual, an agency specializing in digital communication,
+                        located in Rio de Janeiro, Brazil. Content creation for websites, newsletters,
+                        presentations, animations and reports. Serving large companies such as L'Oréal,
+                        Monsanto, Petrobras, Vale and Lafarge.
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <br><br><br><br><br>
+    <hr style="width: 80%;">
+    <br><br><br><br>
+
+    <section class="Main" style="margin-top:0;">
+
+        <div class="container_cv">
+
+            <div class="container_cv_title">
+                <h2 class="topic_internal">
+                    Education
+                </h2>
+            </div>
+
+            <div class="container_education_content">
+
+
+                <div class="cv_education_year" id="education_year1">
+            <span class="year_cv">
+                2021 - 2022
+            </span><br></div>
+
+     <div class="education_main_content" id="education_content1">
+            <span class="education_cv">Torrens University |
+                <br> Master</span>
+            <br><br>
+
+            <span class="job_description_cv">
+                Master of Business Information Systems at Torrens University in Adelaide,
+                South Australia.
+            </span>
+</div>
+            <!-- education  2-->
+            <br><Br><br><br>
+
+                <div class="cv_education_year" id="education_year2">
+            <span class="year_cv">
+                2009 - 2011
+            </span><br></div>
+
+            <div class="education_main_content" id="education_content2">
+            <span class="education_cv">UFF - Rio de Janeiro |
+                <br> Post-graduation</span>
+            <br><br>
+
+            <span class="job_description_cv">
+                Post-graduation. Management of Sustainable Businesses.
+            </span>
+</div>
+
+            <!-- 3-->
+            <br><Br><br><br>
+
+                <div class="cv_education_year" id="education_year3">
+            <span class="year_cv">
+                2003 - 2007
+            </span><br></div>
+
+            <div class="education_main_content" id="education_content3">
+            <span class="education_cv">ESPM - Rio de Janeiro |
+                <br> Bachelor's degree
+            </span>
+            <br><br>
+
+            <span class="job_description_cv">
+
+                Bachelor's degree at Escola Superior de Propaganda e Marketing.
+                Major in
+                Advertising and Marketing.
+            </span></div>
+
+            <!-- 4-->
+            <br><Br><br><br>
+
+                <div class="cv_education_year" id="education_year4">
+            <span class="year_cv">
+                2007 - 2009
+            </span><br></div>
+
+            <div class="education_main_content" id="education_content4">
+
+            <span class="education_cv">Facha - Rio de Janeiro | <br>
+                Bachelor's degree</span>
+            <br><br>
+
+            <span class="job_description_cv">
+                Faculdades Integradas Hélio Alonso. Bachelor's degree, major in
+                Journalism.
+            </span></div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <br><br><br><br>
+    <hr style="width: 80%;">
+    <br><br><br><br>
+
+    <section class="Main" style="margin-top:0;">
+
+        <span class="topic_internal">
+
+            Skills
+
+        </span>
+
+
+
+        <div class="e">
+
+            <ul>
+                <li>
+                    CSS and JavaScript
+                </li>
+                <li>
+                    Photoshop
+                </li>
+                <li>
+                    SEO and SEM
+                </li>
+                <li>
+                    Marketing and Communications
+                </li>
+                <li>Organisational Skills</li>
+            </ul>
+        </div>
+    </section>
+
+    </section>
+
+    <!-- end of main section-->
+
+    <br><br><br><br><br><br>
+
+    <footer class="footer">
+
+        <div class="footer_center">
+            <div class="footer-icon">
+                <a href="https://github.com/lhoveh" target="_blank">
+
+                    <img src="images\github_logo.png" class="bottom-logos">
+
+                </a>
+            </div>
+
+            <div class="footer-icon">
+                <a href="https://www.linkedin.com/in/andrebragancasoares/" target="_blank">
+
+                    <img src="images\linkedin_logo.png" class="bottom-logos">
+
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

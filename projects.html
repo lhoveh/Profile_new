@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>Projects</title>
+
+    <meta name="description" content="My portfolio of projects">
+
+    <link rel="icon" type="image/x-icon" href="images\icon.png">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+
+    <!-- fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Work+Sans:ital,wght@0,600;1,200;1,600&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div class="modalMenu" id="modalMenu">
+        <header class="header">
+
+            <div class="header-center">
+
+                <div class="header-name">
+                    <a href=index.html><span class="topName">André Soares</span></a>
+
+                    <span class="topsubname">
+                        Developer
+                    </span>
+                </div>
+
+                <div class="menu">
+                    <img class="menu_icon" src="images\x.png" id="x_icon">
+                </div>
+
+            </div>
+
+        </header>
+
+        <div class="menu_main">
+            <a href="cv.html">
+                <div class="menu_main_item">
+                    Curriculum
+                </div>
+            </a>
+
+            <a href="projects.html">
+                <div class="menu_main_item">
+                    Projects
+                </div>
+            </a>
+            <a href="contact.html">
+                <div class="menu_main_item">
+                    Contact
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- header -->
+
+    <header class="header">
+
+        <div class="header-center">
+
+            <div class="header-name">
+                <a href=index.html><span class="topName">André Soares</span></a>
+
+                <span class="topsubname">
+                    Developer
+                </span>
+            </div>
+
+            <div class="menu">
+                <img class="menu_icon" src="images\menu_icon.png" id="menu_icon">
+            </div>
+
+            <!-- menu for wide (invisible for mobile first)-->
+            <nav class="header-menu">
+
+                <a class="header-menu-item" href="cv.html">
+                    Curriculum
+                </a>
+
+                <a class="header-menu-item" href="projects.html">
+                    Projects
+                </a>
+
+                <a class="header-menu-item" href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+            <!-- end of menu for wide (invisible for mobile first)-->
+
+        </div>
+
+    </header>
+
+    <script>
+
+        let menuIcon = document.getElementById("menu_icon");
+        menuIcon.addEventListener("click", function () {
+
+            let modalMenu = document.getElementById("modalMenu");
+            modalMenu.classList.add("show_janela");
+            console.log("click")
+
+        })
+
+        let xIcon = document.getElementById("x_icon");
+        xIcon.addEventListener("click", function () {
+
+            let modalMenu = document.getElementById("modalMenu");
+            modalMenu.classList.remove("show_janela");
+            console.log("click")
+
+        })
+
+    </script>
+
+    <section class="Main">
+
+        <!-- 
+            FIRST ELEMENT,
+            THE TITLE (PORTFOLIO)
+        -->
+
+        <h1 class="title_internal">
+            Portfolio
+        </h1>
+
+        <br><br>
+
+        <!-- 
+            PROJECT 1
+            CAMPO
+           
+        -->
+
+         <!-- TÍTULO -->
+        <a href="campo/campo.html" target="_blank">
+            <h2 class="topic_internal"> Botafogo All-Stars </h2>
+        </a>
+
+        <br>
+
+          <!--DESCRIPTION--> 
+        <span class="portfolio-item-description">
+            <br>
+            Basic exercise practing CSS and Vanilla JS. It's an ongoing project, still cleaning the code, many things to
+            improve
+            and yet to fix. It has a football field in which you can select your favourite players and 3 different
+            tatical schemes,
+            plus a section of player's profile. It's an ongoing exercise of grid, objects, arrays, functions, which will
+            be
+            connected to a database in the future.
+        </span>
+
+        <br><br><br>
+
+           <!--IMAGEM-->
+        <div class="portfolio-image">
+            <a href="campo/campo.html" target="_blank">
+                <img src="https://lhoveh.com/campo/img/share.jpg" class="portfolio_image">
+            </a>
+        </div>
+
+        <br><br>
+
+        <!--    PROJECT 2 TÍTULO -->
+            
+        <h2 class="topic_internal"> Uniq Magazine </h2><br>
+        
+    <!--DESCRIPTION--> 
+        <span class="portfolio-item-description">
+            <BR>
+            This is a common description text. Here I will edit
+            some information, regarding my projects etc. Right now, I am
+            just filling up with some words, so I can try this out. I will
+            be able to check the CSS application. I'd better stick width
+            a 50 word limit for these short description texts.
+        </span>
+
+        <br><br><BR>
+
+         <!--IMAGEM-->
+        <div class="portfolio-image">
+            <img src="images/portfolio-item-1.jpg" class="portfolio_image">
+
+        </div>
+
+        
+        <br><br>
+
+        <!--    PROJECT 3 TÍTULO -->
+
+        <h1 class="topic_internal"> Name of project 3 </h1>
+        <br>
+
+          <!--DESCRIPTION--> 
+        <span class="portfolio-item-description">
+<br>
+            This is a common description text. Here I will edit
+            some information, regarding my projects etc. Right now, I am
+            just filling up with some words, so I can try this out. I will
+            be able to check the CSS application. I'd better stick width
+            a 50 word limit for these short description texts.
+
+        </span>
+
+        <br><br><br>
+
+        <!--IMAGEM-->
+        <div class="portfolio-image">
+            <img src="images/portfolio-item-2.jpg" class="portfolio_image">
+        </div>
+    </section>
+    <br><br><br><br><br><br>
+
+    <footer class="footer">
+
+        <div class="footer_center">
+            <div class="footer-icon">
+                <a href="https://github.com/lhoveh" target="_blank">
+
+                    <img src="images\github_logo.png" class="bottom-logos">
+
+                </a>
+            </div>
+
+            <div class="footer-icon">
+                <a href="https://www.linkedin.com/in/andrebragancasoares/" target="_blank">
+
+                    <img src="images\linkedin_logo.png" class="bottom-logos">
+
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

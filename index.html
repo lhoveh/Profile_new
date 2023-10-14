@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+
+    <meta name="description" content="This is my first profile page, developed as a basic HTML and CSS exercise">
+
+    <link rel="icon" type="image/x-icon" href="\images\icon.png">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+    <title>My profile webpage </title>
+
+    <!-- fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Work+Sans:ital,wght@0,600;1,200;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- end of fonts -->
+
+</head>
+
+<body>
+
+    <!-- MODAL FOR THE MENU-->
+
+    <div class="modalMenu" id="modalMenu">
+        <header class="header">
+
+            <div class="header-center">
+
+                <div class="header-name">
+                    <a href=index.html><span class="topName">André Soares</span></a>
+
+                    <span class="topsubname">
+                        Developer
+                    </span>
+
+                    <span class="topsubname_wide">Front-end developer</span>
+                </div>
+
+                <div class="menu">
+                    <img class="menu_icon" src="images\x.png" id="x_icon">
+                </div>
+
+            </div>
+
+        </header>
+
+        <div class="menu_main">
+            <a href="cv.html">
+                <div class="menu_main_item">
+                    Curriculum
+                </div>
+            </a>
+
+            <a href="projects.html">
+                <div class="menu_main_item">
+                    Projects
+                </div>
+            </a>
+            <a href="contact.html">
+                <div class="menu_main_item">
+                    Contact
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- header -->
+
+    <header class="header">
+
+        <div class="header-center">
+
+            <div class="header_name">
+                <a href=index.html><span class="topName">André Soares</span></a>
+
+                <span class="topsubname">
+                    Developer
+                </span>
+
+
+                <span class="topsubname_wide">Front-end developer</span>
+            </div>
+
+            <div class="menu">
+                <img class="menu_icon" src="images\menu_icon.png" id="menu_icon">
+            </div>
+
+            <!-- menu for wide (invisible for mobile first)-->
+            <nav class="header-menu">
+
+                <a class="header-menu-item" href="cv.html">
+                    Curriculum
+                </a>
+
+                <a class="header-menu-item" href="projects.html">
+                    Projects
+                </a>
+
+                <a class="header-menu-item" href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+            <!-- end of menu for wide (invisible for mobile first)-->
+
+        </div>
+
+    </header>
+
+    <script>
+
+        let menuIcon = document.getElementById("menu_icon");
+        menuIcon.addEventListener("click", function () {
+
+            let modalMenu = document.getElementById("modalMenu");
+            modalMenu.classList.add("show_janela");
+            console.log("click")
+
+        })
+
+        let xIcon = document.getElementById("x_icon");
+        xIcon.addEventListener("click", function () {
+
+            let modalMenu = document.getElementById("modalMenu");
+            modalMenu.classList.remove("show_janela");
+            console.log("click")
+
+        })
+
+    </script>
+
+    <section class="section1">
+
+        <!-- imagem - minha foto esquerda-->
+        <div class="pic">
+
+            <img src="images/profile-round.png" class="central_image">
+        </div>
+
+        <!-- texto topo direita-->
+        <div class="text">
+
+            <span class="main-text-name">
+                Hi!
+            </span>
+            <br><bR>
+            <span class="undername">
+                A little about myself:
+            </span>
+            <br><br>
+            <span class="undername2">
+                I am a highly motivated junior front-end developer who has made a recent career transition to pursue my
+                passion for coding.
+                <br><Br>
+                With a strong focus on studying and perfecting my skills, I am constantly working on my portfolio of
+                projects to improve my abilities with the ultimate aim of delivering high-end results.
+            </span>
+        </div>
+
+
+        <!-- botoes embaixo -->
+        <div class="buttons">
+
+            <!-- botao cv -->
+            <div style="text-align: center;">
+                <img src="images/buttons/cv button 2.png" class="button-main">
+
+                <p><span class="button_subtitle"> resumè</span>
+
+
+            </div>
+
+            <!-- botao project -->
+
+            <div style="text-align: center;">
+
+                <img src="images/buttons/proejct button 2.png" class="button-main">
+                <p><span class="button_subtitle"> projects</span>
+
+            </div>
+
+              <!-- botao contato -->
+            <div style="text-align: center;">
+
+                <img src="images/buttons/contact button 2.png" class="button-main">
+                <p><span class="button_subtitle"> contact</span>
+
+            </div>
+
+        </div>
+
+     
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer_center">
+            <div class="footer-icon">
+                <a href="https://github.com/lhoveh" target="_blank">
+
+                    <img src="images\github_logo.png" class="bottom-logos">
+
+                </a>
+            </div>
+
+            <div class="footer-icon">
+                <a href="https://www.linkedin.com/in/andrebragancasoares/" target="_blank">
+
+                    <img src="images\linkedin_logo.png" class="bottom-logos">
+
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
