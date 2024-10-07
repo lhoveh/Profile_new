@@ -22,7 +22,6 @@
     <title>My CV </title>
 
     <style>
-
         /* Estilos responsivos para a seção principal */
         @media (max-width: 768px) {
             .project-grid {
@@ -46,43 +45,45 @@
         }
 
         /* Estilos para os itens do projeto */
- /* Estilos para os itens do projeto */
-.project-item {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 10px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: space-between;
-}
+        /* Estilos para os itens do projeto */
+        .project-item {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: space-between;
+        }
 
-/* Estilo das imagens do portfólio */
-.portfolio-image {
-    margin-top: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    width: 100%;
-    height: 200px;
-    background-color: transparent !important; /* Remove qualquer fundo indesejado */
-}
+        /* Estilo das imagens do portfólio */
+        .portfolio-image {
+            margin-top: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            width: 100%;
+            height: 200px;
+            background-color: transparent !important;
+            /* Remove qualquer fundo indesejado */
+        }
 
-.portfolio_image {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Garantir que a imagem mantenha proporções sem cortar */
-    background-color: transparent !important; /* Remove qualquer fundo indesejado */
-}
+        .portfolio_image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            /* Garantir que a imagem mantenha proporções sem cortar */
+            background-color: transparent !important;
+            /* Remove qualquer fundo indesejado */
+        }
 
-/* Estilo da descrição do portfólio */
-.portfolio-item-description {
-    margin-bottom: 10px;
-    min-height: 150px;
-    flex-grow: 1;
-    overflow: hidden;
-}
-
+        /* Estilo da descrição do portfólio */
+        .portfolio-item-description {
+            margin-bottom: 10px;
+            min-height: 150px;
+            flex-grow: 1;
+            overflow: hidden;
+        }
     </style>
 
 </head>
@@ -168,11 +169,14 @@
                     <h2 class="topic_internal">Botafogo All-Stars</h2>
                 </a>
                 <span class="portfolio-item-description">
-                    Basic exercise practicing CSS and Vanilla JS. It's an ongoing project, still cleaning the code,
-                    many things to improve and yet to fix. It has a football field in which you can select your
-                    favourite players and 3 different tactical schemes, plus a section of player's profile. It's an
-                    ongoing exercise of grid, objects, arrays, functions, which will be connected to a database in
-                    the future.
+                    I created a small soccer field here, replicating the page design from Globo.com using vanilla JS and
+                    CSS. It was my first experience. I started with inline commands and DOM manipulation. Later, I
+                    progressed to JS object manipulation for player lists (arrays) and categories.
+                    <p></p>
+                    Some commands/automations still need improvement. In the future, database integration could be
+                    explored.
+                    There's also a section solely for player profiles, where I practiced replicating the design of an
+                    existing website but using my own content. I also worked on responsiveness.
                 </span>
                 <div class="portfolio-image">
                     <a href="campo/campo.html" target="_blank">
@@ -189,9 +193,14 @@
                 </a>
                 <span class="portfolio-item-description">
                     A silly little game based on Alcatraz. You move the character, pick up objects in the cell, and do
-                    everything with a mouse, keyboard, or touch. Super basic, just for testing. The images were created
-                    using artificial intelligence. Only CSS and JS.
-                </span>
+                    everything with a mouse, keyboard, or touching the screen. Super basic, just for testing. The images
+                    were created
+                    using artificial intelligence. <p>
+                        I've used CSS and JS only here, but I also used Midjourney for the images, and some AI help to
+                        create the functions that allow the character movements. I'll study these functions further to
+                        better understand what was done. Everything else, including responsiveness, was manual work done
+                        by me.
+                    </p> </span>
                 <div class="portfolio-image">
                     <a href="https://www.lhoveh.com/GAME/index.html" target="_blank">
                         <img src="https://www.lhoveh.com/GAME/game.jpg" class="portfolio_image">
@@ -204,17 +213,24 @@
                 <a href="https://www.lhoveh.com/Botafogo/botafogo.html" target="_blank">
                     <h2 class="topic_internal">Botafogo Portal</h2>
                 </a>
-                <span class="portfolio-item-description" >
-                    This is a common description text. Here I will edit some information, regarding my projects etc.
-                    Right now, I am just filling up with some words, so I can try this out. I will be able to check
-                    the CSS application. I'd better stick with a 50 word limit for these short description texts.
+
+                <span class="portfolio-item-description">
+                    Here, I’m really exploring AI. I come up with the idea and act as the creative director, using
+                    ChatGPT for the CSS and HTML code and making only the adjustments. I work with AI to achieve design
+                    results based on my guidance.
+
+                    <p></p>
+
+                    My focus here is on quickly generating a website structure to populate it with content as soon
+                    as possible. In the future, I plan to analyze and optimize it according to best practices.
                 </span>
                 <div class="portfolio-image" style="text-decoration: none; color: white !important;">
-                    <a href="https://www.lhoveh.com/Botafogo/botafogo.html" target="_blank" style="text-decoration: none; color: white !important;">
+                    <a href="https://www.lhoveh.com/Botafogo/botafogo.html" target="_blank"
+                        style="text-decoration: none; color: white !important;">
                         <img src="https://www.lhoveh.com/Botafogo/botalogo.png" class="portfolio_image">
                     </a>
                 </div>
-                
+
             </div>
 
         </div>
