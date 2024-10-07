@@ -164,29 +164,38 @@
                 <form action="https://formspree.io/f/mwkjppej" method="POST">
 
 
-                    <fieldset class="fieldset" style="border-width: 0;">
+                    <fieldset class="fieldset" style="border-width: 0;"> <!--linha 1 coluna direita-->
 
 
-                        <div class="field1">
+                        <div class="field1"> <!--campo nome na linha 1 coluna direita-->
                             <label for="name" class="subtitle-2">
                                 Name
-                            </label><br><br>
+                            </label>
+
+                            <br><br>
+
                             <input type="text" name="name" id="name">
+
                         </div>
 
                         <br><br>
-                        <div class="field2">
+
+                        <div class="field2"> <!--campo sobrenome na linha 1 coluna direita-->
+
                             <label for="surname" class="subtitle-2">
                                 Surname
-                            </label><br><br>
+                            </label>
+
+                            <br><br>
+
                             <input type="text" name="surname" id="surname">
                         </div>
 
-                    </fieldset>
+                    </fieldset> <!--fim da linha 1 coluna direita-->
 
-                    <br><br>
+                    <!-- <br><br> -->
 
-                    <fieldset class="fieldset" style="border-width: 0;">
+                    <fieldset class="fieldset" > <!--campo sobrenome na linha 2 coluna direita-->
 
                         <div class="field3">
 
@@ -200,7 +209,7 @@
                             <input type="email" name="email" id="email">
 
                         </div>
-
+<p></p>
                         <div class="field4" class="subtitle-2">
 
                             
@@ -212,14 +221,16 @@
                             <input type="text" name="_subject" id="subject">
                         </div>
 
-                     
-                    <!-- </fieldset>
-                    <br><br>
-                    <fieldset class="fieldset" style="border-width: 0;"> -->
-
                         <br><br>
                         <div class="textarea">
-                            <!-- <br><br> -->
+                            <!-- <br><br> --> 
+                             <style>
+                            @media (min-width: 991px) {
+                                .textarea {
+                                    margin-top: 20px; /* ajuste o valor conforme necessário */
+                                }
+                            }
+                        </style> 
 
                             <label class="subtitle-2" for="Message">
                                 Message

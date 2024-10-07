@@ -940,7 +940,7 @@ img.portfolio_image{
         "field3 field3 field3 . field4 field4 field4"
         "textarea textarea textarea textarea textarea contact_button contact_button";
         /*justify-self: flex-end;*/
-        background-color: #ecc164;
+        /* background-color: #ecc164; */
 
     }
 
@@ -951,24 +951,24 @@ img.portfolio_image{
 
     .field1{
         grid-area: field1;
-        background-color: gray;
+        /* background-color: gray; */
     }
 
     .field2{
         grid-area: field2;
-        background-color: gray;
+        /* background-color: gray; */
     }
 
 
     .field3{
         grid-area: field3;
-        background-color: gray;
+        /* background-color: gray; */
     }
 
 
     .field4{
         grid-area: field4;
-        background-color: gray;
+        /* background-color: gray; */
     }
 
     .textarea{
