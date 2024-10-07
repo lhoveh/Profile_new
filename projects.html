@@ -15,17 +15,24 @@
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Work+Sans:ital,wght@0,600;1,200;1,600&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Work+Sans:ital,wght@0,600;1,200;1,600&display=swap"
         rel="stylesheet">
+
+    <title>My CV </title>
+
     <style>
+
         /* Estilos responsivos para a seção principal */
         @media (max-width: 768px) {
             .project-grid {
-                display: block; /* Muda para layout em bloco */
+                display: block;
+                /* Muda para layout em bloco */
             }
 
             .project-item {
-                margin-bottom: 20px; /* Espaçamento entre os itens */
+                margin-bottom: 20px;
+                /* Espaçamento entre os itens */
             }
         }
 
@@ -39,46 +46,58 @@
         }
 
         /* Estilos para os itens do projeto */
-        .project-item {
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            padding: 10px;
-            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-            display: flex; /* Usar flexbox para alinhar imagem e texto */
-            flex-direction: column; /* Colocar a imagem e o texto em coluna */
-            align-items: stretch; /* Alinhar itens para esticar ao máximo */
-            justify-content: space-between; /* Garantir que o espaço seja distribuído */
-        }
+ /* Estilos para os itens do projeto */
+.project-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+}
 
-        /* Estilo das imagens do portfólio */
-        .portfolio-image {
-            margin-top: 10px; /* Espaço entre o texto e a imagem */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
-            border-radius: 8px; /* Bordas arredondadas */
-            width: 100%; /* A imagem ocupa 100% do espaço disponível */
-            height: 200px; /* Define uma altura fixa para todas as imagens */
-            object-fit: cover; /* Ajusta o tamanho da imagem para cobrir o espaço */
-        }
+/* Estilo das imagens do portfólio */
+.portfolio-image {
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 100%;
+    height: 200px;
+    background-color: transparent !important; /* Remove qualquer fundo indesejado */
+}
 
-        /* Estilo da descrição do portfólio */
-        .portfolio-item-description {
-            margin-bottom: 10px; /* Espaço inferior na descrição */
-            min-height: 150px; /* Altura mínima para uniformidade */
-            flex-grow: 1; /* Permite que a descrição cresça se necessário */
-            overflow: hidden; /* Esconde o texto que ultrapassa o limite */
-        }
+.portfolio_image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Garantir que a imagem mantenha proporções sem cortar */
+    background-color: transparent !important; /* Remove qualquer fundo indesejado */
+}
+
+/* Estilo da descrição do portfólio */
+.portfolio-item-description {
+    margin-bottom: 10px;
+    min-height: 150px;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
     </style>
 
 </head>
 
 <body>
 
+    <!-- MODAL FOR THE MENU. The one that appears after clicking At the top right corner -->
+    <!--Click the 3 bars icon top corner on mobile version -->
+
     <div class="modalMenu" id="modalMenu">
         <header class="header">
             <div class="header-center">
                 <div class="header-name">
                     <a href=index.html><span class="topName">André Soares</span></a>
-                    <span class="topsubname">Developer</span>
+                    <span class="topsubname">Front-end</span>
                 </div>
                 <div class="menu">
                     <img class="menu_icon" src="images/x.png" id="x_icon">
@@ -99,12 +118,14 @@
         </div>
     </div>
 
+    <!-- *** END OF MODAL FOR THE MENU *** -->
+
     <!-- header -->
     <header class="header">
         <div class="header-center">
             <div class="header-name">
                 <a href=index.html><span class="topName">André Soares</span></a>
-                <span class="topsubname">Developer</span>
+                <span class="topsubname">Front-end</span>
             </div>
             <div class="menu">
                 <img class="menu_icon" src="images/menu_icon.png" id="menu_icon">
@@ -161,29 +182,39 @@
             </div>
 
             <!-- PROJECT 2 -->
+
             <div class="project-item">
-                <h2 class="topic_internal">Uniq Magazine</h2>
+                <a href="https://www.lhoveh.com/GAME/index.html" target="_blank">
+                    <h2 class="topic_internal">Game</h2>
+                </a>
                 <span class="portfolio-item-description">
-                    This is a common description text. Here I will edit some information, regarding my projects etc.
-                    Right now, I am just filling up with some words, so I can try this out. I will be able to check
-                    the CSS application. I'd better stick with a 50 word limit for these short description texts.
+                    A silly little game based on Alcatraz. You move the character, pick up objects in the cell, and do
+                    everything with a mouse, keyboard, or touch. Super basic, just for testing. The images were created
+                    using artificial intelligence. Only CSS and JS.
                 </span>
                 <div class="portfolio-image">
-                    <img src="images/portfolio-item-1.jpg" class="portfolio_image">
+                    <a href="https://www.lhoveh.com/GAME/index.html" target="_blank">
+                        <img src="https://www.lhoveh.com/GAME/game.jpg" class="portfolio_image">
+                    </a>
                 </div>
             </div>
 
             <!-- PROJECT 3 -->
             <div class="project-item">
-                <h2 class="topic_internal">Name of project 3</h2>
-                <span class="portfolio-item-description">
+                <a href="https://www.lhoveh.com/Botafogo/botafogo.html" target="_blank">
+                    <h2 class="topic_internal">Botafogo Portal</h2>
+                </a>
+                <span class="portfolio-item-description" >
                     This is a common description text. Here I will edit some information, regarding my projects etc.
                     Right now, I am just filling up with some words, so I can try this out. I will be able to check
                     the CSS application. I'd better stick with a 50 word limit for these short description texts.
                 </span>
-                <div class="portfolio-image">
-                    <img src="images/portfolio-item-2.jpg" class="portfolio_image">
+                <div class="portfolio-image" style="text-decoration: none; color: white !important;">
+                    <a href="https://www.lhoveh.com/Botafogo/botafogo.html" target="_blank" style="text-decoration: none; color: white !important;">
+                        <img src="https://www.lhoveh.com/Botafogo/botalogo.png" class="portfolio_image">
+                    </a>
                 </div>
+                
             </div>
 
         </div>
